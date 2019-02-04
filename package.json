@@ -6,7 +6,7 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "jest --config jestconfig.json",
+    "test": "jest",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
     "prepare": "npm run build",
@@ -34,12 +34,18 @@
     "lib/**/*"
   ],
   "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-typescript": "^7.1.0",
     "@types/jest": "^23.3.13",
+    "babel-jest": "^24.0.0",
+    "bpmn-moddle": "^5.1.6",
     "jest": "^24.0.0",
     "prettier": "^1.16.4",
     "ts-jest": "^23.10.5",
     "tslint": "^5.12.1",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.3.1"
-  }
+  },
+  "dependencies": {}
 }

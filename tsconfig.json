@@ -2,9 +2,16 @@
     "compilerOptions": {
         "target": "es5",
         "module": "commonjs",
-        "declaration": true,
         "outDir": "./lib",
-        "strict": true
+        "allowJs": true,
+        "moduleResolution": "node",
+        "noImplicitThis": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "noUnusedLocals": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true
     },
     "include": ["src"],
     "exclude": ["node_modules", "**/__tests__/*"]
