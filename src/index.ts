@@ -18,13 +18,13 @@ export class Fump {
     dc: DcPackage,
     di: DiPackage,
   };
-  private moddle: BpmnModdle.BPMNModdle;
+  private model: BpmnModdle.BPMNModdle;
 
   constructor() {
-    this.moddle = new BpmnModdle(this.packages);
+    this.model = new BpmnModdle(this.packages);
   }
 
-  public getModdle(): BpmnModdle.BPMNModdle {
-    return this.moddle;
+  public getModel(): BpmnModdle.BPMNModdle {
+    return this.model;
   }
 }
