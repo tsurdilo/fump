@@ -6,6 +6,6 @@ test('Simple Fump', () => {
   const element1 = fump.getModdle().create('bpmn:UserTask');
 
   fump.getModdle().toXML(element1, {}, (err: Error, result: string) => {
-    expect(result).toContain('bpmn:userTask');
+    expect(result).toContain('<bpmn:userTask');
   });
 });
