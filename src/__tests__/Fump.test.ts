@@ -1,5 +1,11 @@
-import fump from '../index';
+import { Fump } from '../index';
 
 test('Simple Fump', () => {
-  fump.getPackages();
+  const fump = new Fump();
+
+  const element1 = fump.getModdle().create('bpmn:UserTask');
+
+  fump.getModdle().toXML(element1, {}, (err: Error, result: string) => {
+    expect(result).toContain('bpmn:userTask');
+  });
 });
